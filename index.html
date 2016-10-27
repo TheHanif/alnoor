@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title>Al-Noor Lasani</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="swfobject.js">
+		</script>
+        
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+			}
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				font-size: 10pt;
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>	
+			
+	</head>
+	<body>
+    <nav class="navbar center navbar-default" role="navigation" style="border-color: #6bceed">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Al Noor Lasani"></a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-ex1-collapse navbar-inner">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+						<a href="s-gloss.html" class="dropdown-toggle">S Gloss<b class="caret"></b></a>
+						<span class="toggle" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu">
+							<li><a href="sgloss-color-palette.php" target="_self">Color Palette</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+						<a href="tactile.html" class="dropdown-toggle">Tactile<b class="caret"></b></a>
+						<span class="toggle" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu">
+							<li><a href="tactile-color-palette.php" target="_self">Color Palette</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+						<a href="high-gloss.html" class="dropdown-toggle">High Gloss<b class="caret"></b></a>
+						<span class="toggle" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu">
+							<li><a href="high-gloss-color-palette.php" target="_self">Color Palette</a></li>
+						</ul>
+					</li>
+                     <li class="dropdown">
+						<a href="lasani-laminates.html" class="dropdown-toggle">Lasani Laminates<b class="caret"></b></a>
+						<span class="toggle" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu">
+							<li><a href="lasani-laminates-color-palette.php" target="_self">Color Palette</a></li>
+                            <li><a href="duralam.html" target="_self">DuraLam</a></li>
+						</ul>
+                    
+					</li>
+
+					
+					<li><a href="mdf.html">MDF</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<div id="panorama" style="width:100%;height:100%;">
+		This content requires HTML5/CSS3, WebGL, or Adobe Flash Player Version 10 or higher.
+		</div>
+		<script type="text/javascript">
+	
+		// check for CSS3 3D transformations and WebGL
+		if (ggHasHtml5Css3D() || ggHasWebGL()) {
+			// use HTML5 panorama
+			// create the panorama player with the panorama
+			pano=new pano2vrPlayer("panorama");
+		} else 
+		if (swfobject.hasFlashPlayerVersion("10.0.0")) {
+			var flashvars = {};
+			var params = {};
+			// enable javascript interface
+			flashvars.externalinterface="1";
+			params.quality = "high";
+			params.bgcolor = "";
+			params.allowscriptaccess = "sameDomain";
+			params.allowfullscreen = "true";
+			var attributes = {};
+			attributes.id = "flashpano";
+			attributes.name = "flashpano";
+			attributes.align = "middle";
+	
+			params.base=".";
+			params.wmode = "transparent";
+			pano=new pano2vrPlayer("panorama",{ useFlash:true, flashPlayerId: 'flashpano', flashpanoramaId:'flashcontainer'});
+			swfobject.embedSWF("pano2vr_player.swf", "flashcontainer", "100%", "100%", "10.0.0", "", flashvars, params, attributes);
+		}
+		// add the skin object
+		skin=new pano2vrSkin(pano);
+		// load the configuration
+		window.addEventListener("load", function() {
+			pano.readConfigUrlAsync("pano.xml");
+		});
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

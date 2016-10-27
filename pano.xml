@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="node1" hideabout="1">
+  <input leveltilesize="525" height="1370" levelbias="0.400" levelingroll="0" levelbiashidpi="0.400" overlap="1" width="1370" leveltileurl="tiles/Blur/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+    <level preload="0" height="1370" predecode="0" width="1370"/>
+    <level preload="0" height="685" predecode="0" width="685"/>
+    <level preload="1" height="342" predecode="1" width="342"/>
+    <preview strip="1" color="0x808080"/>
+  </input>
+  <view pannorth="0" fovmode="0">
+    <start fov="78.3" tilt="-2.62" pan="-5.4"/>
+    <min fov="38.3" tilt="-90" pan="0"/>
+    <max fov="89.3" tilt="90" pan="360"/>
+  </view>
+  <userdata description="" title="" latitude="" source="" comment="" tags="Documents" datetime="2016:05:19 03:53:24" copyright="" info="" longitude="" author=""/>
+  <hotspots height="20" width="180" wordwrap="1">
+    <label textcolor="0x000000" borderalpha="1" height="20" background="1" backgroundcolor="0xffffff" textalpha="1" border="1" enabled="1" bordercolor="0x000000" borderradius="1" backgroundalpha="1" width="180" wordwrap="1"/>
+    <polystyle borderalpha="1" backgroundcolor="0x444444" bordercolor="0x0000ff" backgroundalpha="1" handcursor="1" mode="0"/>
+    <polyhotspot description="" title="" url="lasani-laminates.html" id="Poly01" target="_self">
+      <vertex tilt="9.63" pan="47.6"/>
+      <vertex tilt="9.89" pan="30.1"/>
+      <vertex tilt="0.94" pan="30.29"/>
+      <vertex tilt="1.23" pan="48.82"/>
+    </polyhotspot>
+    <polyhotspot description="" title="" url="tactile.html" id="Poly02" target="_self">
+      <vertex tilt="-6.45" pan="-5.05"/>
+      <vertex tilt="-7.43" pan="-19.88"/>
+      <vertex tilt="-15.47" pan="-19.8"/>
+      <vertex tilt="-13.64" pan="-4.6"/>
+    </polyhotspot>
+    <polyhotspot description="" title="" url="s-gloss.html" id="Poly04" target="_self">
+      <vertex tilt="10.22" pan="-42.35"/>
+      <vertex tilt="10.18" pan="-52.67"/>
+      <vertex tilt="4.63" pan="-52.9"/>
+      <vertex tilt="4.49" pan="-42.55"/>
+    </polyhotspot>
+    <polyhotspot description="" title="" url="high-gloss.html" id="Poly03" target="_self">
+      <vertex tilt="7.76" pan="6.12"/>
+      <vertex tilt="7.49" pan="-1.15"/>
+      <vertex tilt="1.16" pan="-1.12"/>
+      <vertex tilt="0.81" pan="8.47"/>
+      <vertex tilt="8.35" pan="8.37"/>
+    </polyhotspot>
+  </hotspots>
+  <media>
+    <image fov="16.705" rotx="0.000" height="87" tilt="-9.690" roty="19.000" width="120" id="Tactile" clickmode="0" pan="-14.860" rotz="4.000" stretch="1.000">
+      <source url="media/Tactile.png"/>
+    </image>
+    <image fov="14.676" rotx="0.000" height="109" tilt="5.360" roty="0.000" width="170" id="Lasani" clickmode="0" pan="37.820" rotz="0.000" stretch="1.000">
+      <source url="media/lasani-laminates.png"/>
+    </image>
+    <image fov="14.864" rotx="0.000" height="90" tilt="7.510" roty="0.000" width="180" id="Gloss" clickmode="0" pan="-47.700" rotz="0.000" stretch="1.000">
+      <source url="media/sgloss.png"/>
+    </image>
+    <image fov="12.678" rotx="0.000" height="109" tilt="4.570" roty="0.000" width="170" id="Element01" clickmode="0" pan="2.840" rotz="0.000" stretch="1.000">
+      <source url="media/high-gloss.png"/>
+    </image>
+  </media>
+  <transition zoomfov="20" softedge="0" enabled="0" type="crossdissolve" zoomspeed="2" zoomin="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomout="0"/>
+  <control sensitivity="12" lockedmouse="0" invertcontrol="0" lockedkeyboardzoom="1" speedwheel="1" contextfullscreen="1" simulatemass="1" lockedkeyboard="1" hideabout="1" invertwheel="0" dblclickfullscreen="1" lockedwheel="0">
+    <menulink url="" text=""/>
+  </control>
+</panorama>
